@@ -19,11 +19,10 @@ const navBar = () => {
               <a class="nav-link" href="#" id="js-cards">JS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="c#">C#</a>
+              <a class="nav-link" href="#" id="c-sharp-cards">C#</a>
             </li>
           </ul>
           <span class="navbar-text">
-            <div id="cart-button"></div>
             <div id="logout-button"></div>
           </span>
         </div>
