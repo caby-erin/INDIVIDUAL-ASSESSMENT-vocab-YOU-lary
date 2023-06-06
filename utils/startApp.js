@@ -2,12 +2,18 @@ import logoutButton from '../components/buttons/logoutButton';
 import domBuilder from '../components/shared/domBuilder';
 import navBar from '../components/shared/navBar';
 import { showCards } from '../pages/cards';
-import getCards from '../api/cardData';
+import navigationEvents from '../events/navigationEvents';
+import { getCards } from '../api/cardData';
+import domEvents from '../events/domEvents';
+import formEvents from '../events/formEvents';
 
 const startApp = (user) => {
   domBuilder(user);
   navBar();
   logoutButton();
+  navigationEvents(user);
+  domEvents(user);
+  formEvents(user);
 
   getCards(user.uid).then((cards) => showCards(cards));
 };
