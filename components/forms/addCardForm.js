@@ -13,8 +13,15 @@ const addCardForm = (obj = {}) => {
       <label for="description">Description</label>
       <textarea class="form-control" placeholder="Word/Phrase Definition" id="definition" style="height: 100px">${obj.definition || ''}</textarea>
     </div>
-    <div class="form-group" id="select-language">
-    </div>
+
+    <div class="mb-3">
+    <label for="language" class="form-label">Language</label>
+    <select id="language" class="form-select">
+      <option selected>Select a language</option>
+      <option value="Javascript">JavaScript</option>
+      <option value="C#">C#</option>
+    </select>
+  </div>
     <button type="submit" class="btn btn-primary">Submit Card
     </button>
   </form>`;
