@@ -9,6 +9,7 @@ const formEvents = (user) => {
       const payload = {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
+        language: document.querySelector('#language').value,
         uid: user.uid
       };
       console.warn('CLICKED SUBMIT CARD', e.target.id);
