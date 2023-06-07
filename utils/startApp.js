@@ -10,10 +10,10 @@ import formEvents from '../events/formEvents';
 const startApp = (user) => {
   domBuilder(user);
   navBar();
-  logoutButton();
   navigationEvents(user);
   domEvents(user);
   formEvents(user);
+  logoutButton();
 
   getCards(user.uid).then((cards) => showCards(cards));
 };
