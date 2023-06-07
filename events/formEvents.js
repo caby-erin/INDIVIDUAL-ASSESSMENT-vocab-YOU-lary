@@ -12,7 +12,7 @@ const formEvents = (user) => {
         language: document.querySelector('#language').value,
         uid: user.uid
       };
-      console.warn('CLICKED SUBMIT CARD', e.target.id);
+      console.warn('CLICKED SUBMIT CARD', payload);
       createCard(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
         updateCard(patchPayload).then(() => {
