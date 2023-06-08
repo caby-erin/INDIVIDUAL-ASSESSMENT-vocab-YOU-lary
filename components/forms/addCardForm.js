@@ -4,7 +4,7 @@ import renderToDom from '../../utils/renderToDom';
 const addCardForm = (obj = {}) => {
   clearDom();
   const domString = `
-  <form id="${obj.firebaseKey ? `update-card--${obj.firebaseKey}` : 'submit-card'}" class="mb-4">
+  <form id="${obj.firebaseKey ? `update-card-btn--${obj.firebaseKey}` : 'submit-card'}" class="mb-4">
     <div class="form-group">
       <label for="title">Vocab Word</label>
       <input type="text" class="form-control" id="title" aria-describedby="bookTitle" placeholder="Enter Vocab Word" value="${obj.title || ''}" required>

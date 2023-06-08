@@ -53,6 +53,7 @@ const cSharpCards = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// Create Card
 const createCard = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/cards.json`, {
     method: 'POST',
@@ -66,6 +67,7 @@ const createCard = (payload) => new Promise((resolve, reject) => {
     .catch((reject));
 });
 
+// Update Card
 const updateCard = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/cards/${payload.firebaseKey}.json`, {
     method: 'PATCH',
@@ -79,6 +81,19 @@ const updateCard = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// Get Single Card
+const getSingleCard = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/cards/${firebaseKey}.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 export {
-  getCards, jsCards, cSharpCards, createCard, updateCard
+  getCards, jsCards, cSharpCards, createCard, updateCard, getSingleCard
 };
