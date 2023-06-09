@@ -8,10 +8,13 @@ const formEvents = (user) => {
     e.preventDefault();
     // Submit New Cards
     if (e.target.id.includes('submit-card')) {
+      const dateSubmitted = new Date();
+      const date = dateSubmitted.toLocaleString();
       const payload = {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
         language: document.querySelector('#language').value,
+        date_submitted: date,
         uid: user.uid
       };
       console.warn('CLICKED SUBMIT CARD', payload);
