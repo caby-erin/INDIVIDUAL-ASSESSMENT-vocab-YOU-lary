@@ -13,6 +13,7 @@ const domEvents = (user) => {
       const [, firebaseKey] = e.target.id.split('--');
 
       getSingleCard(firebaseKey).then((cardObj) => addCardForm(cardObj, user));
+      window.scrollTo(0, 0);
     }
 
     if (e.target.id.includes('delete-card-btn')) {
