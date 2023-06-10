@@ -78,3 +78,35 @@ init();
 ## More Info and Resources on Webpack
 - Visit the [Webpack documentation](https://webpack.js.org/concepts/) if you want to explore more.
 - [Info on our Webpack Config](https://github.com/nss-nightclass-projects/Night-Class-Resources/blob/master/book-2-patterns-and-tools/chapters/webpack-configure.md)
+
+
+
+My Notes
+## Name of the Project: 
+Vocab-YOU-Lary
+## Overview of the project: 
+User can add vocab cards, edit vocab cards, an delete vocab cards.
+
+## Link to your wireframes/prototype: 
+I drew this on paper.
+
+## Link/screenshot of data flowchartL 
+flow chart linked in images folder
+## Link to the deployed project (will learn later)
+https://eloquent-lolly-bd0e64.netlify.app/#
+## Link to your project board (yes...even though it is a part of the repo) 
+not sure what this means
+
+## Description of the user and the problem you are solving for them: 
+User can keep track of their vocab cards -along with crete and delete
+
+## List of features - 
+Crete card, edit card, delete card, log in, log out
+## Screenshots of your project  - 
+linked inimages folder
+
+## List of contributors and links to their GH profiles - 
+followed Almost Amazon project
+
+## Link to Loom video walkthrough of your app (no more than 1 minute long! Make it great)
+https://www.loom.com/share/18034cba39044e30a5ee669251930492
